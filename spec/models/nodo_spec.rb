@@ -15,7 +15,7 @@ describe Nodo do
 
   describe '#get_linked_nodes_and_distance' do
     it 'returns all linked nodes' do
-      expect(subject.get_linked_nodes_distance).to eql({ 'nodo_2' => 7, 'nodo_3' => 9, 'nodo_6' => 14})
+      expect(subject.get_linked_nodes_distance).to eql({ 2 => 7, 3 => 9, 6 => 14})
     end
   end
 

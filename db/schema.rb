@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131025205036) do
+ActiveRecord::Schema.define(version: 20131026033105) do
 
   create_table "link_nodos", force: true do |t|
     t.integer  "nodoA"
     t.integer  "nodoB"
-    t.integer  "distance"
+    t.float    "distance"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20131025205036) do
     t.integer  "distance"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "visited"
   end
 
 end
